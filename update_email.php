@@ -32,7 +32,7 @@
             if($isImageUpload)
             {
                 $res = $c1->updateProfileToIdEmail($email,$name);
-    
+                
                 if($res)
                 {
                     $arr['msg'] = "Data updated successfully";
@@ -40,6 +40,7 @@
                     $arr['err'] = "Image not uploaded Database!";
                 }
             }else{
+                $res = $c1->updateProfileToIdEmail($email,$result["image"]);
                 $arr['err'] = "Image not uploaded Server!";
             }
         // }
