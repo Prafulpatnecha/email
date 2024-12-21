@@ -19,6 +19,7 @@
         // if($profileImage != null)
         // {
             // $profileImage = $result['profileImage'];
+            print_r($result);
             $image = $_FILES['image'];
             $name = $image["name"];
             $tmp_name = $image["tmp_name"];
